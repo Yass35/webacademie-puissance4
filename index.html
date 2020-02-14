@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Puissance 4</title>
+  <link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Boogaloo|Darker+Grotesque&display=swap" rel="stylesheet">
+</head>
+<body>
+
+	<section id="grid"></section>
+	<section id="option">
+	<h1>Puissance 4</h1>
+		<div id="currentPlayer"></div>
+		<img class="AnimVictoire" src="https://media2.giphy.com/media/dQpqkxXyPvb2iImius/giphy.gif?cid=790b7611d236e6505907216eb2e7605110cf21cf8c975607&amp;rid=giphy.gif">
+    <div class="scores">
+      <div>
+        <span class="player">Player 1</span>
+        <span id="playerOne">0</span>
+      </div>
+			<input type="button" value="Reset" id="reset" onClick="document.location.reload(true)">
+      <div>
+        <span class="player">Player 2</span>
+        <span id="playerTwo">0</span>
+      </div>
+    </div>
+
+    <button type="button" id="replay">Replay</button>
+		<button type="button" id="cancel">Cancel</button>
+	</section>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+  <script>$('#grid').puissance4(6,7)</script>
+	<script src="script.js"></script>
+</body>
+</html>
